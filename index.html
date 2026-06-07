@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF6EC">
+
+  <!-- Primary meta -->
+  <title>Thru Do — Hands-free Shopify ownership for UK investors</title>
+  <meta name="description" content="Thru Do builds, launches and operates Shopify businesses on behalf of UK investors — product sourcing, ads, fulfilment and customer care. You hold the asset. We do the work.">
+  <meta name="author" content="Thru Do Ltd.">
+  <link rel="canonical" href="https://thrudo.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thru Do">
+  <meta property="og:title" content="Thru Do — Hands-free Shopify ownership for UK investors">
+  <meta property="og:description" content="We build, launch and run Shopify businesses for UK investors. You own the asset; we handle sourcing, ads, fulfilment and support.">
+  <meta property="og:url" content="https://thrudo.com/">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thru Do — Hands-free Shopify ownership for UK investors">
+  <meta name="twitter:description" content="We build, launch and run Shopify businesses for UK investors. You own the asset; we do the work.">
+
+  <!-- Favicon: TD monogram on navy -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' rx='9' fill='%230B1A2E'/><text x='24' y='33' font-family='Georgia,serif' font-size='22' font-style='italic' fill='%23F5EFE2' text-anchor='middle'>TD</text><line x1='11' y1='38' x2='37' y2='38' stroke='%23B87E3E' stroke-width='1'/></svg>">
+
+  <!-- Add `js` early so reveal styles apply before first paint (no flash) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Preload the two fonts used above the fold -->
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Thru Do",
+    "legalName": "Thru Do Ltd.",
+    "url": "https://thrudo.com/",
+    "email": "hello@thrudo.com",
+    "foundingDate": "2026",
+    "founder": { "@type": "Person", "name": "Touseef Ahmad" },
+    "description": "Hands-free Shopify ownership for UK investors. Thru Do builds and operates Shopify businesses end-to-end.",
+    "areaServed": "GB",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "offers": [
+      { "@type": "Offer", "name": "Starter", "price": "4000", "priceCurrency": "GBP" },
+      { "@type": "Offer", "name": "Growth", "price": "8000", "priceCurrency": "GBP" },
+      { "@type": "Offer", "name": "Premium", "price": "16000", "priceCurrency": "GBP" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor-glow" id="glow" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <nav class="wrap nav-inner" aria-label="Primary">
+    <a href="#" class="logo" aria-label="Thru Do home">
+      <span class="mark" aria-hidden="true">
+        <!-- Professional monogram: TD ligature in a tonneau medallion -->
+        <svg viewBox="0 0 48 48" fill="none">
+          <rect x="2.5" y="2.5" width="43" height="43" rx="9" stroke="currentColor" stroke-width="1.25" stroke-opacity=".25"></rect>
+          <rect x="5.5" y="5.5" width="37" height="37" rx="6.5" fill="currentColor"></rect>
+          <text x="24" y="32.5" font-family="Fraunces, 'Times New Roman', serif" font-size="22" font-style="italic" font-weight="400" fill="#F5EFE2" text-anchor="middle" letter-spacing="-1">TD</text>
+          <line x1="11" y1="38" x2="37" y2="38" stroke="#B87E3E" stroke-width="1"></line>
+        </svg>
+      </span>
+      <span class="wm">Thru Do<small>EST · 2026</small></span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#packages">Packages</a>
+      <a href="#founder">About</a>
+      <a href="#cta">Contact</a>
+    </div>
+
+    <a href="#cta" class="btn nav-cta">
+      Book a call
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#how">How it works</a>
+    <a href="#packages">Packages</a>
+    <a href="#founder">About</a>
+    <a href="#who">Who it's for</a>
+    <a href="#cta" class="btn">
+      Book a call
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-stage">
+      <div class="hero-copy">
+        <span class="eyebrow">Managed Shopify Ownership <span class="dot" aria-hidden="true"></span></span>
+        <h1 id="hero-title">
+          <span class="h1-line"><span>Own an online store.</span></span>
+          <span class="h1-line"><span><span class="it underline">We&nbsp;do</span> the running.</span></span>
+        </h1>
+        <p class="lede reveal d1">
+          Thru Do builds, launches and operates Shopify businesses on behalf of UK investors —
+          from product sourcing to ads, fulfilment and customer care. You hold the asset.
+          We do the work.
+        </p>
+        <div class="hero-cta reveal d2">
+          <a href="#cta" class="btn">
+            Book a discovery call
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+          <a href="#packages" class="btn ghost">See packages</a>
+        </div>
+        <p class="hero-meta small reveal d3">
+          <span>UK-focused</span><span class="pip" aria-hidden="true"></span>
+          <span>Operated from Lahore</span><span class="pip" aria-hidden="true"></span>
+          <span>Founded by Touseef Ahmad</span>
+        </p>
+      </div>
+
+      <!-- Orbit visual (decorative) -->
+      <div class="orbit-wrap reveal d2" aria-hidden="true">
+        <div class="orbit-bg"></div>
+        <div class="orbit">
+          <div class="orbit-ring r1"></div>
+          <div class="orbit-ring r2"></div>
+          <div class="orbit-ring r3"></div>
+        </div>
+
+        <div class="orbit-core">
+          <div class="label">You<span class="big">own it.</span></div>
+        </div>
+
+        <div class="node n1 float">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 11l18-8-4 18-5-7-9-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+          <span class="tip">Ads</span>
+        </div>
+        <div class="node n2 float f2">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 7l9-4 9 4M3 7v10l9 4 9-4V7M3 7l9 4 9-4M12 11v10" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+          <span class="tip">Fulfilment</span>
+        </div>
+        <div class="node n3 float f3">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 11-3.5-7.1M21 4v5h-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span class="tip">Support</span>
+        </div>
+
+        <div class="node-sm s1"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div>
+        <div class="node-sm s2"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"></circle><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div>
+        <div class="node-sm s3"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 4 9-9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 7h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <div class="node-sm s4"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.5"></path><path d="M4 10h16" stroke="currentColor" stroke-width="1.5"></path></svg></div>
+        <div class="node-sm s5"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"></circle><path d="M4 20a8 8 0 0116 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div>
+
+        <div class="orbit-track t1"><div class="pulse p1"></div></div>
+        <div class="orbit-track t2"><div class="pulse p2"></div></div>
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="stats reveal d4">
+      <div class="stat">
+        <div class="k"><span class="counter" data-to="5">0</span><span class="unit">yrs+</span></div>
+        <div class="l">Shopify experience</div>
+      </div>
+      <div class="stat">
+        <div class="k"><span class="counter" data-to="3">0</span></div>
+        <div class="l">Investment tiers</div>
+      </div>
+      <div class="stat">
+        <div class="k"><span class="counter" data-to="100">0</span><span class="unit">%</span></div>
+        <div class="l">Hands-free for the investor</div>
+      </div>
+      <div class="stat">
+        <div class="k">£4k<span class="unit">→ £16k</span></div>
+        <div class="l">Entry range</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="wrap">
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Product sourcing<span class="dot"></span></span>
+      <span class="marquee-item">Shopify build<span class="dot"></span></span>
+      <span class="marquee-item">Meta ads<span class="dot"></span></span>
+      <span class="marquee-item">Google ads<span class="dot"></span></span>
+      <span class="marquee-item">TikTok ads<span class="dot"></span></span>
+      <span class="marquee-item">Customer care<span class="dot"></span></span>
+      <span class="marquee-item">Fulfilment<span class="dot"></span></span>
+      <span class="marquee-item">Optimisation<span class="dot"></span></span>
+      <span class="marquee-item">Product sourcing<span class="dot"></span></span>
+      <span class="marquee-item">Shopify build<span class="dot"></span></span>
+      <span class="marquee-item">Meta ads<span class="dot"></span></span>
+      <span class="marquee-item">Google ads<span class="dot"></span></span>
+      <span class="marquee-item">TikTok ads<span class="dot"></span></span>
+      <span class="marquee-item">Customer care<span class="dot"></span></span>
+      <span class="marquee-item">Fulfilment<span class="dot"></span></span>
+      <span class="marquee-item">Optimisation<span class="dot"></span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MANIFESTO ============ -->
+<section id="what" aria-labelledby="what-eyebrow">
+  <div class="wrap">
+    <div class="section-head"><div class="reveal"><span class="eyebrow" id="what-eyebrow">What we do</span></div></div>
+    <div class="manifesto">
+      <div class="manifesto-grid">
+        <p class="reveal d1">
+          We build complete online businesses, <span class="it">end&#8209;to&#8209;end</span>
+          <span class="muted">— and run them, day in, day out, so you don't have to.</span>
+        </p>
+        <div class="doings reveal d2">
+          <div class="item"><span>Product research &amp; sourcing</span><span class="n">01</span></div>
+          <div class="item"><span>Brand &amp; Shopify build</span><span class="n">02</span></div>
+          <div class="item"><span>Meta, Google &amp; TikTok ads</span><span class="n">03</span></div>
+          <div class="item"><span>Customer support</span><span class="n">04</span></div>
+          <div class="item"><span>Fulfilment &amp; logistics</span><span class="n">05</span></div>
+          <div class="item"><span>Supplier management</span><span class="n">06</span></div>
+          <div class="item"><span>Growth &amp; optimisation</span><span class="n">07</span></div>
+          <div class="item"><span>Monthly reporting</span><span class="n">08</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how" style="padding-top:32px" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">How it works</span>
+        <h2 id="how-title" style="margin-top:18px">Four steps from <span class="italic">commitment to cashflow.</span></h2>
+      </div>
+      <p class="meta lede small reveal d1" style="max-width:32ch">
+        A clean, predictable on-ramp. Most investors are operational
+        within four to six weeks of signing.
+      </p>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal d1">
+        <span class="n">01 — Join</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <h3>Choose a package</h3>
+        <p>Select Starter, Growth or Premium. We sign, take a deposit and kick off onboarding.</p>
+      </li>
+      <li class="step reveal d2">
+        <span class="n">02 — Build</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12M9 21v-7h6v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <h3>We build the store</h3>
+        <p>Brand, product research, suppliers, Shopify build and ad creative — done by our team in Lahore.</p>
+      </li>
+      <li class="step reveal d3">
+        <span class="n">03 — Operate</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.6 1.7 1.7 0 00-1.8.3l-.1.1A2 2 0 014.3 16.7l.1-.1A1.7 1.7 0 004.7 15a1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1A1.7 1.7 0 004.7 9a1.7 1.7 0 00-.3-1.8l-.1-.1A2 2 0 017.1 4.3l.1.1a1.7 1.7 0 001.8.3H9A1.7 1.7 0 0010 3.2V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.6 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 012.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <h3>We run it daily</h3>
+        <p>Ads, customer service, fulfilment, supplier ops, optimisation. You receive monthly reports.</p>
+      </li>
+      <li class="step reveal d4">
+        <span class="n">04 — Earn</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 17l6-6 4 4 8-9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 6h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <h3>You take profit</h3>
+        <p>Profit is split each month after the management fee. You stay completely hands-free.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PACKAGES (HORIZONTAL CAROUSEL) ============ -->
+<section id="packages" aria-labelledby="packages-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Investment Packages</span>
+        <h2 id="packages-title" style="margin-top:18px">Three ways in. <span class="italic">One outcome.</span></h2>
+      </div>
+      <p class="meta lede small reveal d1" style="max-width:34ch">
+        Drag, swipe or use the arrows. Pricing in GBP — monthly fee covers all operating work; profit share is taken after fees and costs.
+      </p>
+    </div>
+
+    <div class="pkg-stage reveal d2">
+      <div class="pkg-controls">
+        <div class="pkg-dots" role="tablist" aria-label="Package slides">
+          <button type="button" data-i="0" aria-current="true" aria-label="Starter"></button>
+          <button type="button" data-i="1" aria-current="false" aria-label="Growth"></button>
+          <button type="button" data-i="2" aria-current="false" aria-label="Premium"></button>
+        </div>
+        <div class="pkg-arrows">
+          <button class="pkg-arrow" id="pkgPrev" type="button" aria-label="Previous package">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </button>
+          <button class="pkg-arrow" id="pkgNext" type="button" aria-label="Next package">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="pkg-scroller" id="pkgScroller">
+        <!-- Starter -->
+        <article class="pkg" data-i="0">
+          <div class="pack-name">
+            <h3>Starter</h3>
+            <span class="tag">Entry</span>
+          </div>
+          <div>
+            <div class="price">
+              <span class="ccy">£</span><span class="price-fig num">4,000</span>
+            </div>
+            <div class="price-sub">one-time investment</div>
+          </div>
+          <div class="pack-rows">
+            <div class="pack-row"><span class="l">Monthly fee</span><span class="v">£400</span></div>
+            <div class="pack-row"><span class="l">Profit share</span><span class="v">20%</span></div>
+            <div class="pack-row"><span class="l">Store builds</span><span class="v">1</span></div>
+            <div class="pack-row"><span class="l">Ad channels</span><span class="v">Meta</span></div>
+            <div class="pack-row"><span class="l">Reporting</span><span class="v">Monthly</span></div>
+          </div>
+          <a class="btn ghost" href="#cta">Apply for Starter
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+        </article>
+
+        <!-- Growth -->
+        <article class="pkg featured" data-i="1">
+          <span class="badge">Most popular</span>
+          <div class="pack-name">
+            <h3>Growth</h3>
+            <span class="tag">Recommended</span>
+          </div>
+          <div>
+            <div class="price">
+              <span class="ccy">£</span><span class="price-fig num">8,000</span>
+            </div>
+            <div class="price-sub">one-time investment</div>
+          </div>
+          <div class="pack-rows">
+            <div class="pack-row"><span class="l">Monthly fee</span><span class="v">£650</span></div>
+            <div class="pack-row"><span class="l">Profit share</span><span class="v">25%</span></div>
+            <div class="pack-row"><span class="l">Store builds</span><span class="v">1 (premium)</span></div>
+            <div class="pack-row"><span class="l">Ad channels</span><span class="v">Meta + Google</span></div>
+            <div class="pack-row"><span class="l">Reporting</span><span class="v">Bi-weekly</span></div>
+          </div>
+          <a class="btn" href="#cta">Apply for Growth
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+        </article>
+
+        <!-- Premium -->
+        <article class="pkg" data-i="2">
+          <div class="pack-name">
+            <h3>Premium</h3>
+            <span class="tag">Scaled</span>
+          </div>
+          <div>
+            <div class="price">
+              <span class="ccy">£</span><span class="price-fig num">16,000</span>
+            </div>
+            <div class="price-sub">one-time investment</div>
+          </div>
+          <div class="pack-rows">
+            <div class="pack-row"><span class="l">Monthly fee</span><span class="v">£950</span></div>
+            <div class="pack-row"><span class="l">Profit share</span><span class="v">30%</span></div>
+            <div class="pack-row"><span class="l">Store builds</span><span class="v">Up to 2</span></div>
+            <div class="pack-row"><span class="l">Ad channels</span><span class="v">Meta + Google + TikTok</span></div>
+            <div class="pack-row"><span class="l">Reporting</span><span class="v">Weekly</span></div>
+          </div>
+          <a class="btn ghost" href="#cta">Apply for Premium
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUDIENCE + WHY ============ -->
+<section id="who" style="padding-top:32px" aria-labelledby="who-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Who it's for / Why us</span>
+        <h2 id="who-title" style="margin-top:18px">Built for UK professionals <span class="italic">who'd rather own than operate.</span></h2>
+      </div>
+    </div>
+
+    <div class="twocol">
+      <div class="reveal d1">
+        <h3 style="margin-bottom:20px">Who we work with</h3>
+        <div class="audience">
+          <div class="row"><span>Business owners</span><span class="meta">— hands-free</span></div>
+          <div class="row"><span>Senior professionals</span><span class="meta">— time-poor</span></div>
+          <div class="row"><span>Property investors</span><span class="meta">— diversifying</span></div>
+          <div class="row"><span>Entrepreneurs</span><span class="meta">— second engine</span></div>
+          <div class="row"><span>Passive-income seekers</span><span class="meta">— recurring</span></div>
+        </div>
+      </div>
+
+      <div class="reveal d2">
+        <h3 style="margin-bottom:20px">Why Thru Do</h3>
+        <div class="why">
+          <div class="pt">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div><h4>Genuinely hands-free</h4><p>You don't write a single ad, answer a single ticket, or message a single supplier.</p></div>
+          </div>
+          <div class="pt">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div><h4>No e-commerce experience needed</h4><p>We assume zero prior knowledge and walk you through the model in plain language.</p></div>
+          </div>
+          <div class="pt">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div><h4>Operated from Lahore, sold to the UK</h4><p>UK-grade store quality at a fraction of the cost of a UK agency.</p></div>
+          </div>
+          <div class="pt">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div><h4>Skin in the game</h4><p>We earn when you earn. Profit share aligns our incentives with yours.</p></div>
+          </div>
+          <div class="pt">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div><h4>Direct sourcing</h4><p>Products sourced directly through our network in Pakistan — better margins, faster iteration.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section id="founder" aria-labelledby="founder-eyebrow">
+  <div class="wrap">
+    <div class="section-head"><div class="reveal"><span class="eyebrow" id="founder-eyebrow">The founder</span></div></div>
+
+    <div class="founder reveal d1">
+      <div class="portrait" aria-hidden="true">
+        <div class="ph">TA</div>
+        <div class="label">Portrait — pending</div>
+      </div>
+      <div>
+        <blockquote>
+          I've spent five years building Shopify stores for myself and clients.
+          Thru Do is what I'd want as an investor: a serious operator who treats your capital like their own.
+        </blockquote>
+        <h3>Touseef Ahmad</h3>
+        <p class="lede" style="margin-top:8px">
+          Founder. 5+ years in Shopify, product sourcing, branding and paid acquisition across Meta, Google and TikTok.
+          Based in Lahore.
+        </p>
+        <p class="sig">
+          <span class="nm">— Touseef</span>
+          <span class="pip" aria-hidden="true"></span>
+          <span class="small">Founder, Thru Do</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="cta" aria-labelledby="cta-title">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="cta-ring" aria-hidden="true"></div>
+      <div>
+        <h2 id="cta-title">Let's see if <span class="it">we fit.</span></h2>
+        <p class="sub">
+          A 30-minute discovery call. We'll walk you through the model, answer questions
+          and — if it makes sense — outline the next steps.
+        </p>
+      </div>
+      <div class="actions">
+        <a href="mailto:hello@thrudo.com" class="btn">
+          Book a discovery call
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </a>
+        <span class="small">Replies within 1 business day</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand">
+        <a href="#" class="logo" aria-label="Thru Do home">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="2.5" y="2.5" width="43" height="43" rx="9" stroke="currentColor" stroke-width="1.25" stroke-opacity=".25"></rect>
+              <rect x="5.5" y="5.5" width="37" height="37" rx="6.5" fill="currentColor"></rect>
+              <text x="24" y="32.5" font-family="Fraunces, 'Times New Roman', serif" font-size="22" font-style="italic" font-weight="400" fill="#F5EFE2" text-anchor="middle" letter-spacing="-1">TD</text>
+              <line x1="11" y1="38" x2="37" y2="38" stroke="#B87E3E" stroke-width="1"></line>
+            </svg>
+          </span>
+          <span class="wm">Thru Do<small>EST · 2026</small></span>
+        </a>
+        <p>Hands-free Shopify ownership for UK investors. Built and operated from Lahore.</p>
+      </div>
+      <nav aria-label="Product">
+        <h5>Product</h5>
+        <a href="#how">How it works</a>
+        <a href="#packages">Packages</a>
+        <a href="#who">Who it's for</a>
+      </nav>
+      <nav aria-label="Company">
+        <h5>Company</h5>
+        <a href="#founder">Founder</a>
+        <a href="#cta">Contact</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <nav aria-label="Get in touch">
+        <h5>Get in touch</h5>
+        <a href="mailto:hello@thrudo.com">hello@thrudo.com</a>
+        <a href="#">LinkedIn</a>
+        <a href="#cta">Book a call</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Thru Do Ltd.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts (deferred, executed in order) -->
+<script src="js/main.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/components.js" defer></script>
+</body>
+</html>

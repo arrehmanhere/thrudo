@@ -1,0 +1,118 @@
+/* =============================================================
+   Thru Do — animations.css
+   All keyframes + animation utility classes in one place.
+   Everything animates transform/opacity only (GPU-friendly, no
+   layout thrash) and degrades gracefully under reduced-motion.
+   ============================================================= */
+
+/* ---------------------------------------------------------------
+   1. Scroll reveal
+   The `.js` class is added to <html> by main.js. Without JS the
+   content stays fully visible, so the page is never blank.
+   --------------------------------------------------------------- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity .9s var(--ease),
+    transform .9s var(--ease);
+  will-change: opacity, transform;
+}
+.js .reveal.in {
+  opacity: 1;
+  transform: none;
+}
+/* Stagger delays */
+.reveal.d1 { transition-delay: .08s; }
+.reveal.d2 { transition-delay: .16s; }
+.reveal.d3 { transition-delay: .24s; }
+.reveal.d4 { transition-delay: .32s; }
+.reveal.d5 { transition-delay: .40s; }
+.reveal.d6 { transition-delay: .48s; }
+
+/* ---------------------------------------------------------------
+   2. Hero heading rise (mask + translate)
+   --------------------------------------------------------------- */
+.h1-line { overflow: hidden; display: block; }
+.h1-line > span {
+  display: inline-block;
+  transform: translateY(110%);
+  animation: rise 1.05s cubic-bezier(.18, .78, .2, 1) forwards;
+}
+.h1-line:nth-child(2) > span { animation-delay: .18s; }
+
+@keyframes rise { to { transform: translateY(0); } }
+
+/* Hand-drawn underline swash (declared on the element in style.css) */
+@keyframes swash { to { opacity: 1; transform: scaleX(1); } }
+
+/* ---------------------------------------------------------------
+   3. Eyebrow / badge pulse dot
+   --------------------------------------------------------------- */
+.eyebrow .dot { animation: pulseDot 2.4s ease-in-out infinite; }
+.pkg .badge::before { animation: pulseDot 2s ease-in-out infinite; }
+
+@keyframes pulseDot {
+  0%, 100% { box-shadow: 0 0 0 0 #B87E3E33; }
+  50% { box-shadow: 0 0 0 6px #B87E3E00; }
+}
+
+/* ---------------------------------------------------------------
+   4. Hero orbit system
+   --------------------------------------------------------------- */
+.orbit { animation: slowSpin 80s linear infinite; }
+.cta-ring { animation: slowSpin 80s linear infinite; }
+
+@keyframes slowSpin { to { transform: rotate(360deg); } }
+
+.float { animation: floaty 6s ease-in-out infinite; }
+.float.f2 { animation-delay: -2s; }
+.float.f3 { animation-delay: -4s; }
+
+@keyframes floaty {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -6px; }
+}
+
+.orbit-track.t1 { animation: trackSpin 14s linear infinite; }
+.orbit-track.t2 { animation: trackSpin 18s linear infinite reverse; }
+
+@keyframes trackSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ---------------------------------------------------------------
+   5. Marquee
+   --------------------------------------------------------------- */
+.marquee-track {
+  display: flex;
+  gap: 56px;
+  width: max-content;
+  white-space: nowrap;
+  animation: scrollx 40s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+@keyframes scrollx {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ---------------------------------------------------------------
+   6. Reduced-motion: honour the OS/browser preference.
+   Kills decorative loops + reveal offsets, keeps content visible.
+   --------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js .reveal { opacity: 1; transform: none; }
+  .h1-line > span { transform: none; }
+  .hero h1 .underline::after { opacity: 1; transform: none; }
+}

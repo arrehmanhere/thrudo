@@ -1,0 +1,102 @@
+/* =============================================================
+   Thru Do — responsive.css
+   All breakpoints in one place, large → small.
+   Tested intent: 320 · 375 · 425 · 768 · 1024 · 1440 · 1920 · 2560+
+   Fluid type/spacing (clamp) handles most scaling in style.css;
+   these queries restructure layout where grids must collapse.
+   ============================================================= */
+
+/* ---------------------------------------------------------------
+   Ultrawide / large desktops — keep content from over-stretching
+   --------------------------------------------------------------- */
+@media (min-width: 1800px) {
+  .wrap { max-width: 1360px; }
+}
+
+/* ---------------------------------------------------------------
+   <= 980px — hero stacks, packages show two-up
+   --------------------------------------------------------------- */
+@media (max-width: 980px) {
+  .hero-stage {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .orbit-wrap {
+    margin: 24px auto 0;
+    justify-self: center;
+  }
+  .pkg { flex-basis: calc((100% - 24px) / 2); min-width: 280px; }
+}
+
+/* ---------------------------------------------------------------
+   <= 880px — switch to mobile nav, collapse 2-col layouts
+   --------------------------------------------------------------- */
+@media (max-width: 880px) {
+  .nav-links,
+  .nav .nav-cta { display: none; }
+  .nav-toggle { display: inline-flex; }
+
+  .manifesto-grid { grid-template-columns: 1fr; gap: 32px; }
+  .twocol { grid-template-columns: 1fr; gap: 48px; }
+
+  .steps { grid-template-columns: 1fr 1fr; }
+  .step:nth-child(2) { border-right: none; }
+}
+
+/* ---------------------------------------------------------------
+   <= 780px — stats two-up, founder/CTA/footer stack
+   --------------------------------------------------------------- */
+@media (max-width: 780px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: none; }
+  .stat:nth-child(1),
+  .stat:nth-child(2) { border-bottom: 1px solid var(--line-2); }
+
+  .founder { grid-template-columns: 1fr; }
+  .founder .portrait { max-width: 240px; }
+
+  .cta { grid-template-columns: 1fr; }
+  .cta .actions { align-items: flex-start; }
+
+  .foot { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
+  .foot .brand { grid-column: 1 / -1; }
+}
+
+/* ---------------------------------------------------------------
+   <= 640px — single-column packages, tighter type
+   --------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .pkg { flex-basis: 88%; min-width: 0; }
+  .marquee-item { font-size: 18px; }
+  .section-head .meta { min-width: 0; }
+  .doings { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------------------------------------------
+   <= 520px — steps single column
+   --------------------------------------------------------------- */
+@media (max-width: 520px) {
+  .steps { grid-template-columns: 1fr; }
+  .step { border-right: none; }
+  .step h3 { margin-top: 56px; }
+  .hero-cta { width: 100%; }
+  .hero-cta .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+/* ---------------------------------------------------------------
+   <= 380px — smallest phones (320–375)
+   --------------------------------------------------------------- */
+@media (max-width: 380px) {
+  .logo .wm { font-size: 12px; letter-spacing: .24em; }
+  .price-fig { font-size: 50px; }
+  .orbit-core .label .big { font-size: 20px; }
+  .founder .portrait .ph { font-size: 110px; }
+}
+
+/* ---------------------------------------------------------------
+   Coarse pointers (touch) — disable hover-only flourishes
+   that have no meaning without a cursor
+   --------------------------------------------------------------- */
+@media (hover: none) {
+  .cursor-glow { display: none !important; }
+}
