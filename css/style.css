@@ -191,13 +191,14 @@ h3 { font-size: clamp(23px, 2.3vw, 31px); line-height: 1.15; font-weight: 400; }
   white-space: nowrap;
 }
 .logo .mark {
-  width: 40px; height: 40px;
-  flex: 0 0 40px;
+  width: 56px; height: 56px;
+  flex: 0 0 56px;
   position: relative;
   transition: transform .6s var(--ease);
 }
 .logo:hover .mark { transform: rotate(-6deg); }
-.logo .mark svg { width: 100%; height: 100%; display: block; }
+.logo .mark svg,
+.logo .mark img { width: 100%; height: 100%; display: block; object-fit: contain; }
 .logo .wm {
   font-family: var(--sans);
   font-weight: 500;
@@ -958,7 +959,7 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); position: relative;
 
 /* Footer logo: slightly smaller mark, larger wordmark */
 .foot .brand .logo { display: inline-flex; }
-.foot .brand .logo .mark { display: inline-block; width: 34px; height: 34px; flex: 0 0 34px; }
+.foot .brand .logo .mark { display: inline-block; width: 50px; height: 50px; flex: 0 0 50px; }
 .foot .brand .logo .wm { font-size: 16px; letter-spacing: .26em; }
 .foot .brand .logo .wm small { font-size: 11px; margin-top: 7px; }
 
