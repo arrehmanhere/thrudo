@@ -35,7 +35,6 @@
   }
   .pkg { flex-basis: calc((100% - 24px) / 2); min-width: 280px; }
 
-  .tm-grid,
   .cap-grid,
   .proj-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -88,7 +87,6 @@
   .section-head .meta { min-width: 0; }
   .doings { grid-template-columns: 1fr; }
 
-  .tm-grid,
   .cap-grid,
   .proj-grid { grid-template-columns: 1fr; }
   .foot { grid-template-columns: 1fr; }

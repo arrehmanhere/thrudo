@@ -99,6 +99,13 @@
   to   { transform: translateX(-50%); }
 }
 
+/* Testimonials marquee — shift is measured per layout by reviews.js
+   (--tm-shift), so the loop is seamless regardless of card count. */
+@keyframes tmScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-1 * var(--tm-shift, 50%))); }
+}
+
 /* ---------------------------------------------------------------
    5b. Floating WhatsApp pulse halo
    --------------------------------------------------------------- */

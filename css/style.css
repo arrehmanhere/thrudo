@@ -1030,12 +1030,32 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); position: relative;
 /* ---------------------------------------------------------------
    20. Testimonials
    --------------------------------------------------------------- */
-.tm-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+/* Horizontal auto-scrolling marquee — stays one row tall no matter
+   how many reviews exist. Full-bleed with soft fade edges. The track
+   is duplicated + driven by reviews.js (see @keyframes tmScroll). */
+.tm-marquee {
+  position: relative;
+  overflow: hidden;
+  margin: 0 calc(var(--wrap-x) * -1);
+  padding: 8px 0 18px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
 }
+.tm-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  padding: 6px var(--wrap-x);
+  will-change: transform;
+  animation: tmScroll 60s linear infinite;
+}
+/* Pause on hover or keyboard focus so people can actually read */
+.tm-marquee:hover .tm-track,
+.tm-track:focus-within { animation-play-state: paused; }
+
 .tm-card {
+  flex: 0 0 clamp(280px, 30vw, 360px);
+  width: clamp(280px, 30vw, 360px);
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
