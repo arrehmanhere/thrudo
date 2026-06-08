@@ -98,7 +98,7 @@ Static hosting, no configuration needed. Pick one:
 - **Cloudflare Pages / S3 / any CDN** — upload the folder; serve `index.html`.
 
 ### Before going live
-- Replace placeholder links (`Privacy`, `LinkedIn`) and confirm `hello@thrudo.com`.
+- Wire up the booking links (CTA button + footer "Book a call") and replace placeholder links (`Privacy`, `LinkedIn`) once a contact method exists.
 - Swap the founder portrait placeholder (`.portrait`) for a real image.
 - Update the `og:url` / `canonical` if the domain differs from `thrudo.com`.
 - Add an `og:image` (1200×630) once brand artwork is ready.

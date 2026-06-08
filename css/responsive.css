@@ -14,6 +14,14 @@
 }
 
 /* ---------------------------------------------------------------
+   Medium desktops — the brand tagline beside the logo would crowd
+   the primary nav, so it's shown only on wide screens (footer keeps it).
+   --------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .nav .logo .wm small { display: none; }
+}
+
+/* ---------------------------------------------------------------
    <= 980px — hero stacks, packages show two-up
    --------------------------------------------------------------- */
 @media (max-width: 980px) {
@@ -26,6 +34,10 @@
     justify-self: center;
   }
   .pkg { flex-basis: calc((100% - 24px) / 2); min-width: 280px; }
+
+  .tm-grid,
+  .cap-grid,
+  .proj-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ---------------------------------------------------------------
@@ -60,6 +72,11 @@
 
   .foot { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
   .foot .brand { grid-column: 1 / -1; }
+
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .metric:nth-child(2) { border-right: none; }
+  .metric:nth-child(1),
+  .metric:nth-child(2) { border-bottom: 1px solid var(--line-2); }
 }
 
 /* ---------------------------------------------------------------
@@ -70,6 +87,11 @@
   .marquee-item { font-size: 18px; }
   .section-head .meta { min-width: 0; }
   .doings { grid-template-columns: 1fr; }
+
+  .tm-grid,
+  .cap-grid,
+  .proj-grid { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr; }
 }
 
 /* ---------------------------------------------------------------
